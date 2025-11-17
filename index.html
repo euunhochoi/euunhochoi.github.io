@@ -18,18 +18,15 @@
     video {
       width: 100vw;
       height: 100vh;
-      object-fit: contain;
+      object-fit: contain;   /* 전체가 다 보이게 */
       background-color: #000;
     }
   </style>
 </head>
 <body>
-  <video
-    src="mannequin.mp4"
-    autoplay
-    loop
-    muted
-    playsinline
-  ></video>
+  <video autoplay loop muted playsinline controls>
+    <source src="mannequin.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </body>
 </html>
